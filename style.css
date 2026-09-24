@@ -1,95 +1,72 @@
-/* DOI MAU VA FONT TAI DAY */
+/* DOI MAU, FONT VA KICH THUOC TAI DAY. Khong can cai thu vien. */
 :root {
-  --ink: #193b60;
-  --text: #415065;
-  --muted: #63748a;
-  --link: #286395;
-  --line: #dfe5ec;
-  --panel: #f4f7fb;
-  --serif: Georgia, 'Times New Roman', serif;
-  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-  color-scheme: light;
+  --text: #494e52;
+  --muted: #6f777d;
+  --link: #287da1;
+  --line: #f0f1f2;
+  --background: #fff;
+  --page-width: 1440px;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
-body { margin: 0; color: var(--text); background: white; font: 1rem/1.75 var(--sans); -webkit-font-smoothing: antialiased; }
 [hidden] { display: none !important; }
-a { color: var(--link); text-underline-offset: .25em; }
-a:hover { color: var(--ink); }
-a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
-::selection { background: #deebf7; }
-.skip-link { position: fixed; top: -6rem; left: 1rem; z-index: 30; background: white; padding: .6rem 1rem; }
-.skip-link:focus { top: 1rem; }
-.header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.97); border-top: 4px solid var(--ink); border-bottom: 1px solid var(--line); }
-.header-inner, .container, .footer { max-width: 1080px; margin-inline: auto; }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 86px; }
-.wordmark { color: var(--ink); font: 1.55rem/1.2 var(--serif); text-decoration: none; }
-.wordmark span { color: var(--link); }
-nav { display: flex; gap: 2rem; }
-nav a { display: block; padding-block: .9rem; color: var(--muted); text-decoration: none; font-size: .95rem; }
-nav a:hover { text-decoration: underline; }
-.about { display: grid; grid-template-columns: minmax(0,1fr) 230px; gap: 5rem; padding: 6rem 0 5rem; }
-.eyebrow { color: var(--link); margin: 0 0 1.2rem; font-size: .8rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
-h1 { margin: 0 0 .6rem; color: var(--ink); font: 400 clamp(3.2rem,6.5vw,5rem)/1.12 var(--serif); letter-spacing: -.05em; }
-.role { margin: 0 0 2rem; color: var(--muted); font-size: 1.1rem; }
-.bio p { margin: 0 0 1rem; font-size: 1.1rem; }
-.bio p:first-child { color: var(--ink); font-size: 1.2rem; }
-.bio p:last-child { margin-bottom: 0; }
-.contact-links { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: 1.5rem; }
-.contact-links a { display: inline-flex; align-items: center; min-height: 44px; }
-.sidebar { padding-top: 3.25rem; }
-.interests { padding-left: 1.4rem; border-left: 2px solid #abc3da; }
-.interests h2 { color: var(--muted); margin: 0 0 1rem; font: 500 .9rem/1.5 var(--sans); }
-.interests ul { list-style: none; padding: 0; margin: 0; }
-.interests li { margin: .75rem 0; color: var(--ink); font-size: .97rem; line-height: 1.5; }
-.portrait { display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; margin-bottom: 2rem; border-radius: 3px; }
-h2 { margin: 0; color: var(--ink); font: 400 2.25rem/1.3 var(--serif); letter-spacing: -.025em; }
-.research { padding: 3rem 0 4rem; border-top: 1px solid var(--line); }
-.paper { padding: 2rem 0; border-bottom: 1px solid var(--line); }
-.paper:last-child { border-bottom: 0; padding-bottom: 0; }
-.field { margin: 0 0 .7rem; color: var(--link); font-size: .875rem; }
-.paper h3 { max-width: 850px; margin: 0 0 1rem; color: var(--ink); font: 400 1.75rem/1.35 var(--serif); }
-.paper p:not(.field) { max-width: 850px; margin: 0 0 1rem; }
-.paper-link { display: inline-flex; align-items: center; min-height: 44px; }
-.cv { padding: 2.75rem 3rem; background: var(--panel); border-top: 2px solid #b7cbe0; }
-.cv-heading { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
-.button { padding: .6rem 1.1rem; background: var(--ink); color: white; border-radius: 2px; text-decoration: none; }
-.button:hover { background: var(--link); color: white; }
-.education { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 2rem; margin-top: 2rem; }
-.education h3 { margin: 0; font-size: .94rem; font-weight: 500; color: var(--muted); }
-.degree + .degree { margin-top: 1.5rem; }
-.degree h4 { margin: 0 0 .2rem; color: var(--ink); font-size: 1rem; font-weight: 600; }
-.degree p { margin: 0; font-size: .97rem; }
-.footer { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 2.5rem; font-size: .875rem; color: var(--muted); }
-.footer span { display: block; }
-.footer .footer-name { color: var(--ink); font: 1.15rem/1.5 var(--serif); margin-bottom: .25rem; }
-.footer a { padding-block: .6rem; text-decoration: none; white-space: nowrap; }
-@media(max-width:1180px) {
-  .header-inner,.container,.footer { margin-inline: 3rem; }
-  .about { grid-template-columns: minmax(0,1fr) 210px; gap: 3rem; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--background); color: var(--text); font: 18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; }
+.wrap { width: min(var(--page-width), calc(100% - 64px)); margin-inline: auto; }
+.skip-link { position: absolute; left: 16px; top: -100px; z-index: 5; padding: 8px 16px; background: white; }
+.skip-link:focus { top: 8px; }
+.masthead { border-bottom: 1px solid var(--line); }
+.masthead-inner { min-height: 82px; display: grid; grid-template-columns: 260px 1fr; gap: 44px; align-items: center; }
+.site-title { font-size: 20px; font-weight: 700; color: var(--muted); text-decoration: none; }
+.navigation { display: flex; gap: 38px; align-items: center; }
+.navigation a { padding: 24px 0; color: var(--muted); text-decoration: none; font-size: 20px; }
+.navigation a:hover { color: var(--text); }
+.navigation a[aria-current="page"] { color: var(--text); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; }
+.layout { display: grid; grid-template-columns: 260px minmax(0, 880px); gap: 44px; padding-top: 42px; padding-bottom: 96px; flex: 1; align-items: start; }
+.profile { font-size: 14px; line-height: 1.6; }
+/* Anh goc giu nguyen; CSS chi chon khung hien thi tron. */
+.portrait { width: 190px; height: 190px; border-radius: 50%; overflow: hidden; border: 1px solid #e7e9eb; padding: 4px; margin: 0 0 16px; }
+.portrait-inner { width: 100%; height: 100%; overflow: hidden; border-radius: 50%; }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; transform: scale(1.5); transform-origin: 50% 42%; }
+.profile-name { margin: 0 0 8px; font-size: 20px; line-height: 1.35; }
+.profile-role { margin: 0 0 19px; }
+.profile-links { list-style: none; padding: 0; margin: 0; }
+.profile-links li { display: flex; align-items: flex-start; gap: 10px; margin: 7px 0; }
+.profile-links a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
+.profile-links a:hover { text-decoration: underline; }
+.icon { width: 15px; height: 15px; flex: 0 0 15px; margin-top: 4px; fill: currentColor; }
+.linkedin-icon { color: #0077b5; }
+.content { min-width: 0; }
+.content h1 { font-size: 30px; line-height: 1.3; letter-spacing: -.5px; margin: -4px 0 23px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.content p { margin: 0 0 25px; }
+.content h2 { font-size: 24px; line-height: 1.4; letter-spacing: -.3px; padding-bottom: 9px; margin: 46px 0 18px; border-bottom: 1px solid var(--line); }
+.content h3 { font-size: 20px; margin: 30px 0 10px; }
+.content ul { padding-left: 40px; margin: 0; }
+.content li { margin-bottom: 10px; }
+.site-footer { border-top: 1px solid #d7dbde; background: #f2f3f3; color: var(--muted); font-size: 13px; padding: 28px 0; }
+.site-footer p { margin: 0; }
+@media (min-width: 1600px) { body { font-size: 20px; } .profile { font-size: 16px; } .profile-name { font-size: 21px; } .content h1 { font-size: 32px; } .content h2 { font-size: 26px; } }
+@media (max-width: 1100px) {
+  .masthead-inner, .layout { grid-template-columns: 220px minmax(0, 1fr); gap: 36px; }
+  .portrait { width: 175px; height: 175px; }
 }
-@media(max-width:780px) {
-  .header-inner,.container,.footer { margin-inline: 1.5rem; }
-  .header-inner { min-height: 76px; }
-  .wordmark { font-size: 1.3rem; }
-  nav { gap: 1.25rem; }
-  .about { grid-template-columns: minmax(0,1fr); gap: 2.5rem; padding-block: 3.5rem; }
-  .sidebar { padding-top: 0; }
-  .interests ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .7rem 1.25rem; }
-  .interests li { margin: 0; }
-  .portrait { max-width: 220px; }
-  .cv { padding: 2rem 1.5rem; }
-  .education { grid-template-columns: minmax(0,1fr); gap: 1rem; }
+@media (max-width: 720px) {
+  body { font-size: 17px; }
+  .wrap { width: calc(100% - 36px); }
+  .masthead-inner { display: flex; justify-content: space-between; gap: 15px; min-height: 68px; }
+  .site-title { font-size: 17px; }
+  .navigation { gap: 22px; }
+  .navigation a { font-size: 16px; padding: 20px 0; }
+  .layout { display: block; padding-top: 28px; padding-bottom: 55px; }
+  .profile { display: grid; grid-template-columns: 104px minmax(0, 1fr); column-gap: 20px; margin-bottom: 38px; font-size: 13px; }
+  .portrait { width: 104px; height: 104px; padding: 3px; margin: 0; }
+  .profile-name { font-size: 19px; }
+  .profile-role { margin-bottom: 10px; }
+  .profile-links li { margin: 5px 0; gap: 8px; }
+  .content h1 { font-size: 27px; padding-bottom: 17px; }
+  .content h2 { font-size: 22px; margin-top: 34px; }
+  .content ul { padding-left: 25px; }
 }
-@media(max-width:420px) {
-  .header-inner { flex-wrap: wrap; padding-top: .8rem; gap: 0; }
-  .wordmark { width: 100%; }
-  nav a { padding-block: .6rem; }
-  html { scroll-padding-top: 8.5rem; }
-  .eyebrow { font-size: .78rem; }
-  h2 { font-size: 2rem; }
-  .bio p { font-size: 1rem; }
-  .bio p:first-child { font-size: 1.1rem; }
-  .interests ul { grid-template-columns: minmax(0,1fr); }
-}
-@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } }
+@media (max-width: 370px) { .navigation { gap: 15px; } .profile { grid-template-columns: 85px minmax(0, 1fr); gap: 14px; } .portrait { width: 85px; height: 85px; } }
