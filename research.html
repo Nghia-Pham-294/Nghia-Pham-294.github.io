@@ -45,23 +45,8 @@
 
   <p>
     <strong>Abstract.</strong>
-    Predicting litigation outcomes often requires combining information
-    from documents that serve different roles and cannot always be
-    interpreted independently. I examine three questions: which documents
-    provide useful predictive information, whether documents should be
-    encoded separately or jointly, and how to represent text whose meaning
-    depends on other text. To investigate these questions, I construct a
-    new dataset of U.K. patent litigation outcomes from 1995 to 2026 and
-    compare predictive models at the patent, claim, and ground-of-invalidity
-    levels. Patent litigation provides a setting in which these choices
-    matter: assessing validity may require comparing a claim with the
-    patent description or earlier technical disclosures, while dependent
-    claims incorporate limitations from other claims. I define maximum
-    dependency depth to measure the longest chain of these dependencies
-    and construct expanded claim representations that explicitly
-    incorporate inherited limitations. The results suggest that encoding
-    documents separately and then combining their representations can
-    outperform jointly encoding the concatenated texts in this setting.
+    Predicting patent validity litigation outcomes requires combining information from text fields that serve distinct roles and may depend on one another for interpretation. Using a newly constructed dataset of UK patent litigation, I investigate four questions: which text fields provide useful predictive information, whether they should be encoded separately or jointly, how to represent texts whose meaning depends on other texts, and how to aggregate information across multiple challenges into an overall validity prediction. To characterize textual dependencies, I define maximum dependency depth as the length of the longest chain of dependencies. I then construct expanded text representations that explicitly incorporate relevant content from the texts on which they depend. To aggregate information across challenges, I develop a multiple-instance learning architecture tailored to patent validity litigation. The architecture uses cross-attention, constructing queries from representations of the challenged patent claim and keys and values from representations of the texts cited against it. Empirical results show that the proposed architecture predicts better than the architectures used in the literature in this setting as well as ChatGPT.
+
   </p>
 </article>
       <h2>Research Interests</h2>
